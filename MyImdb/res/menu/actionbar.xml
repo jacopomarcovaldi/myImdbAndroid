@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <!-- Search Widget -->
+<item android:id="@+id/action_search"
+      android:title="cerca"
+      android:showAsAction="always"
+      android:actionViewClass="android.widget.SearchView"/>
+
+<item android:id="@+id/seen_spinner"
+      android:showAsAction="always"
+      android:actionViewClass="android.widget.Spinner"/>
+    
+    <!-- Refresh -->
+    <item android:id="@+id/action_refresh"
+          android:title="aggiorna"
+          android:showAsAction="ifRoom" 
+          android:icon="@drawable/refresh"/>
+</menu>

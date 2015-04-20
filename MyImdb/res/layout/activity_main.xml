@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="207dp" >
+    </android.support.v7.widget.GridLayout>
+
+    <EditText
+        android:id="@+id/UserNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:capitalize="none">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/UserNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:layout_toLeftOf="@+id/progressBar1"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/PasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/UserNameTV"
+        android:layout_below="@+id/UserNameET"
+        android:layout_marginTop="16dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/PasswordET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PasswordTV"
+        android:layout_below="@+id/PasswordTV"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/LoginBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gridLayout1"
+        android:layout_toRightOf="@+id/PasswordTV"
+        android:text="Login" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserNameET"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="seen_array_label">
+        <item>Tutti</item>
+        <item>Visti</item>
+        <item>Non visti</item>
+    </string-array>
+</resources>
